@@ -1,3 +1,83 @@
+@media (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px (typically for tablets and smaller screens) */
+
+  .both-logos {
+    margin-left: 3%; /* Adjust the margin for the logo container */
+  }
+
+  .logo-text {
+    margin-left: 10px; /* Adjust the margin for the logo text */
+  }
+
+  .nav {
+    flex-direction: column; /* Change navigation links to a vertical layout */
+    align-items: center; /* Center-align navigation links */
+  }
+
+  /* Adjust font sizes and margins for smaller screens */
+  h1.name {
+    font-size: 2.5em;
+    margin-left: 5%;
+    margin-top: 150px;
+  }
+
+  h1.name2 {
+    font-size: 2.5em;
+    margin-left: 10%;
+  }
+
+  .shortbio {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  .pic {
+    max-width: 100%; /* Allow the image to scale to the container width */
+    margin-right: 0; /* Remove margin on the right */
+    margin-top: -300px; /* Adjust the margin as needed */
+    float: none; /* Remove float to center the image */
+  }
+
+  .btn {
+    margin-left: 0; /* Remove margin */
+    margin-top: 20px; /* Adjust margin as needed */
+    text-align: center; /* Center-align the button */
+  }
+
+  .buttons-container {
+    margin-top: 10%; /* Adjust margin as needed */
+    margin-left: 0; /* Remove margin on the left */
+    text-align: center; /* Center-align button container */
+  }
+
+  .abt-text,
+  .skl-text,
+  .exp-text {
+    width: 100%; /* Make text containers full width */
+    margin-left: 0; /* Remove margin on the left */
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  .serv {
+    margin-top: 10%; /* Adjust margin as needed */
+    margin-left: 5%; /* Adjust margin as needed */
+  }
+
+  .container {
+    flex-wrap: wrap; /* Allow the containers to wrap */
+    margin-top: 5%;
+  }
+
+  .container div {
+    min-width: 100%; /* Make each container full width on smaller screens */
+    max-width: 100%; /* Make each container full width on smaller screens */
+    margin-left: 0; /* Remove margin on the left */
+    margin-right: 0; /* Remove margin on the right */
+  }
+
+  /* Additional adjustments for other elements as needed */
+}
 body {
   background-color: rgba(255, 255, 255, 0.886);
 }
