@@ -81,13 +81,11 @@
 body {
   background-color: rgba(255, 255, 255, 0.886);
 }
-.header-container {
-  position: relative;
-}
+
 
 .both-logos {
-  position: absolute;
-  top: -40px;
+  position: relative;
+  top: -50px;
   left: 0;
   display: flex;
   align-items: center; /* Vertically align the logo and text */
@@ -111,34 +109,41 @@ body {
 
 
 .home,
-.about,
-.portfolio,
-.services,
-.contact {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-  color: #333;
-  background-color: white;
-  text-align: center;
-  margin-top: 5%;
-}
+  .about,
+  .portfolio,
+  .services,
+  .contact {
+    
+    /* align-items: center; */
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    color: #333;
+    background-color: white;
+    text-align: center;
+    margin-top: 5%;
+    position: sticky;
+    
 
+  }
+  
+  
+  
+  
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(00%, -212%);
+margin-bottom: -15%;
+    z-index: 999;
 
+    
+    
+  }
 
-
-.nav{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
 
 
 
@@ -172,6 +177,7 @@ h1.name2 {
 .shortbio {
   font-family: "San Francisco", sans-serif;
   text-align: left;
+  width: 600px;
   margin-left: 10%;
   margin-top: 2.5%;
   font-size: 25px;
@@ -179,22 +185,24 @@ h1.name2 {
 }
 
 .pic {
-  position: relative;
+  position: absolute;
   max-width: 600px;
   height: auto;
-  margin-right: 5%;
+  /* margin-right: 5%;
   margin-top: -350px;
-  float: right;
-  top: 10;
+  float: right; */
+  /* top: 0;
+  right: 0; */
+  transform: translate(120%, -60%);
  
 }
 
 .btn {
-  position: absolute;
+  position: relative;
   font-size: 20px;
   padding: 20px;
-  margin-left: 350px;
-  margin-top: 60px;
+  left: 340px;
+  top: 60px;
   background-color: rgb(82, 195, 232);
   border-radius: 30px;
   color: rgb(255, 255, 255);
@@ -225,13 +233,12 @@ h1.name2 {
 
 
 .image-info {
-  display: inline-block;
-  text-align: center; 
+  position: relative;
   border: 2px solid #ccc;
   border-radius: 20px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-  margin-top: 25%;
-  margin-left: 14%;
+top: 400px;
+left: 150px;
   width: 300px;
   height: auto;
 }
@@ -269,37 +276,23 @@ button:hover {
 
 
 .buttons-container {
-  display:inline-block;
-  position: absolute;
-  justify-content: center;
-  float: right;
-  margin-top: 25%;
-  margin-left: 4%;
+  display: grid;
+  grid-gap: 2em;
+  width: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* transform: translate(140%, -800%); */
+  position: relative;
+  top: 120px;
+  left: 550px;
+  /* margin-bottom: -10%; */
 
 }
 
-.abt:active:after,
-.skl:active:after,
-.exp:active:after {
-  display: inline-block;
-  background: #eee;
-  color: #333;
-  padding: 10px;
-  position: absolute;
-  bottom: 40px;
-  /* left: 50%; */
-  transform: translateX(-50%);
-  transform: translateY(80%);
-
-  width: 200px;
-  bottom: -60px;
-  z-index: 900;
-}
 
 .abt,
 .skl,
 .exp {
-  position: relative;
+  position: grid;
   cursor: pointer;
 }
 
@@ -307,14 +300,13 @@ button:hover {
 .skl-text,
 .exp-text {
   position: absolute;
-  top: 100%;
+  top: 30px;
   left: 0;
   width: 600px;
   padding: 10px;
   display: none;
   background: #fff;
-  margin-left: 0%;
-  margin-top: 23.5%;
+  
 }
 
 .show-text {
@@ -323,45 +315,42 @@ button:hover {
 
 .serv {
   display: flex;
+  position: relative;
   font-family: "San Francisco", sans-serif;
   text-align: center;
   font-size: 18px;
-  margin-top: 20%;
-  margin-bottom: 0%;
-  margin-left: 31%;
+  top: 470px;
+  /* left: 400px; */
+  margin-left: 33%;
 
 
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 0 10px 0;
+  display: grid;
+  grid-gap: 5em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  position: relative;
+  top: 500px;
+  left: 00px;
+  /* justify-content: space-between; */
 }
 
 .container div {
-  position: relative;
-  flex: 1;
-  min-width: calc(25% - 20px); 
-  max-width: calc(30.33% - 20px); 
-  height: 360px;
+ 
   color: #ffffff;
   padding: 5px;
   background-image: linear-gradient(to right, #171416e9, #700000);
   text-align: center;
-  margin-top: 5%;
-  margin-left: 2%;
-  margin-right: auto;
+  margin-top: 4%;
+ 
 }
 
 .con {
   font-family: "San Francisco", sans-serif;
   text-align: center;
-  font-size: 18px;
-  margin-top: 60px;
-  margin-left: 5%;
-  margin-right: 5%;
+  font-size: 15px;
+
 
 
 }
@@ -369,8 +358,9 @@ button:hover {
 /* copied */
 form {
   width: 50%;
-  margin: 0 auto;
-  margin-top: 15%;
+  position:   relative;
+  top: 600px;
+  left: 200px;
 }
 
 h2 {
@@ -409,48 +399,19 @@ textarea {
   color: #fff;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact a {
-  padding: 10px;
-  font-size: 1.2em;
-  text-decoration: none;
-  color: #333;
-}
-
-.contact i {
-  margin-right: 10px;
-}
-
-.contact .linkedin {
-  color: #0077b5;
-}
-
-.contact .instagram {
-  color: #C13584;
-}
-
-.contact .facebook {
-  color: #3b5998;  
-}
-
-.contact .phone {
-  color: #128C7E;
-}
 
 
 
 /* footer  */
 
 footer {
+  margin-top: 5%;
   background: #000000;
   color: #fff;
   text-align: center; /* Center the content within the footer */
   padding: 2rem 0; /* Adjust padding as needed */
+  position: relative;
+  top: 600px;
 }
 
 footer img {
