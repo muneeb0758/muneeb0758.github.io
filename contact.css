@@ -20,7 +20,7 @@ body {
   }
   
   .logo-text {
-    margin-left: -4em;
+    margin-left: -3em;
 }
   
   
@@ -61,11 +61,11 @@ body {
 
   .contact-heading{
 position: relative;
-left: 2em;
+margin-left: 2em;
 width: 7em;
 min-width: 5em;
 height: auto;
-font-size: 3rem;
+font-size: 3rem , 1.5rem;
   }
 
   .link1, .link2{
@@ -88,8 +88,7 @@ font-size: 3rem;
 
 
 form {
-    /* max-width: 20em;
-    min-width: 05em; */
+   
     position:   relative;
     top: 10em;
     margin-left: 20%;
@@ -129,8 +128,8 @@ form {
     background-image: linear-gradient(to right,#081425 , #42431f);
   
     color: #fff;
-    text-align: center; /* Center the content within the footer */
-    padding: 2rem 0; /* Adjust padding as needed */
+    text-align: center; 
+    padding: 2rem 0; 
     position: relative;
     top: 200px;
   }
@@ -138,24 +137,24 @@ form {
   footer img {
     max-width: 20em;
     height: auto;
-    display: block; /* Center the logo horizontally within the footer */
-    margin: 0 auto 1rem; /* Add margin at the bottom for spacing */
+    display: block; 
+    margin: 0 auto 1rem; 
     margin-bottom: -1.5%;
   }
   
   .footer-links, .footer-social {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; 
   }
   
   .footer-links a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 1rem; /* Add margin between the links */
+    margin: 0 1rem; 
   }
   
   .footer-social a {
-    margin: 0 1rem; /* Add margin between the social icons */
+    margin: 0 1rem; 
     margin-top: 2%;
   }
   
@@ -165,10 +164,100 @@ form {
   
   @media (max-width: 550px) {
   
-  
+    .both-logos {
+      display: flex;
+    position: relative;
+    top: -5em;
+    left: 0;
+    align-items: center; /* Vertically align the logo and text */
+    margin-left: 10%;
+    
+  }
+    .mylogo {
+      max-width: 13em;
+      margin-top: 5em;
+
+      }
+      
+      .logo-text {
+        margin-left: -2em;
+        width: 2.5em;
+      margin-top: 3em;
+
+    }
+
+    .home,
+    .about,
+    .portfolio,
+    .services,
+    .contact {
+    
+      font-size: 16px;
+      margin-top: 5em;
+      transition: all ease 0.3s;
+     
+    }
+
     .link1, .link2{
         left: 6rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
         transition: 0.3s;
       }
+
+      .contact-heading {
+        font-size: 1.5rem; 
+        margin-left: 1em; 
+      }
+
+      
+
     }
+
+    @media (max-width: 400px) {
+  
+    
+    .mylogo {
+      max-width: 10em;
+      margin-top: 5em;
+      transition: 0.3s;
+
+      }
+      
+      .logo-text {
+        margin-left: -1em;
+        min-width: 1em;
+      margin-top: 3em;
+      transition: 0.3s;
+
+    }
+
+        
+      
+      .link1, .link2{
+          left: 3rem;
+          font-size: .9rem;
+          transition: 0.3s;
+        }
+  
+        .contact-heading {
+          margin-left: 1em; 
+          font-size: 1.2rem; 
+        }
+
+        .home,
+        .about,
+        .portfolio,
+        .services,
+        .contact {
+        
+          font-size: 14px;
+          transition: all ease 0.3s;
+         
+        }
+
+        h2 {
+          font-size: 23px;
+          margin-bottom: 10px;
+        }
+
+      }
