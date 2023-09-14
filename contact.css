@@ -1,0 +1,174 @@
+body {
+    background-color: rgba(255, 255, 255, 0.886);
+    overflow-x: hidden;
+  }
+  
+  
+  .both-logos {
+      display: flex;
+    position: relative;
+    top: -7em;
+    left: 0;
+    align-items: center; /* Vertically align the logo and text */
+    margin-left: 0%;
+    
+  }
+  
+  .mylogo {
+  min-width: 3em;
+  max-width: 20em;
+  }
+  
+  .logo-text {
+    margin-left: -4em;
+}
+  
+  
+  .home,
+    .about,
+    .portfolio,
+    .services,
+    .contact {
+    
+      font-size: 20px;
+      color: #333;
+      background-color: white;
+     
+    }
+    
+    
+    .nav{
+     
+  
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+      position: relative;
+      top: -12em;
+      text-align: center;
+    }
+  
+  
+  
+  
+  
+  
+  a:hover {
+    color: rgb(44, 44, 219);
+    transition: 0.3s;    
+    transform: translateY(-0.1em);
+  }
+  
+
+  .contact-heading{
+position: relative;
+left: 2em;
+width: 7em;
+min-width: 5em;
+height: auto;
+font-size: 3rem;
+  }
+
+  .link1, .link2{
+    position: relative;
+    left: 10rem;
+    font-size: 1.3rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+.link1:hover, .link2:hover{
+    transition: 0.3s;
+    color: gray;
+}
+
+
+
+
+
+
+
+form {
+    /* max-width: 20em;
+    min-width: 05em; */
+    position:   relative;
+    top: 10em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .send {
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  footer {
+    margin-top: 5%;
+    background-image: linear-gradient(to right,#081425 , #42431f);
+  
+    color: #fff;
+    text-align: center; /* Center the content within the footer */
+    padding: 2rem 0; /* Adjust padding as needed */
+    position: relative;
+    top: 200px;
+  }
+  
+  footer img {
+    max-width: 20em;
+    height: auto;
+    display: block; /* Center the logo horizontally within the footer */
+    margin: 0 auto 1rem; /* Add margin at the bottom for spacing */
+    margin-bottom: -1.5%;
+  }
+  
+  .footer-links, .footer-social {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem; /* Add margin between the links */
+  }
+  
+  .footer-social a {
+    margin: 0 1rem; /* Add margin between the social icons */
+    margin-top: 2%;
+  }
+  
+  .footer-copyright {
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 550px) {
+  
+  
+    .link1, .link2{
+        left: 6rem;
+        font-size: 1.3rem;
+        transition: 0.3s;
+      }
+    }
