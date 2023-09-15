@@ -1,0 +1,523 @@
+body {
+    background-color: rgba(255, 255, 255, 0.886);
+  }
+  
+  
+  .both-logos {
+    position: relative;
+    top: -50px;
+    left: 0;
+    display: flex;
+    align-items: center; /* Vertically align the logo and text */
+    margin-left: 6%;
+    
+  }
+  
+  .mylogo {
+    width: 270px;
+    height: auto;
+    z-index: 999;
+  }
+  
+  .logo-text {
+     margin-left: -50px;
+    font-family: "San Francisco", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    z-index: 999;
+  }
+  
+  
+  .home,
+    .about,
+    .portfolio,
+    .services,
+    .contact , .projects {
+      
+      /* align-items: center; */
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px;
+      color: #333;
+      background-color: white;
+      text-align: center;
+      margin-top: 5%;
+      position: sticky;
+      
+  
+    }
+    
+    
+    
+    
+    .nav{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform: translate(00%, -212%);
+  margin-bottom: -15%;
+      z-index: 999;
+  
+      
+      
+    }
+  
+  
+  
+  
+  
+  
+  a:hover {
+    color: rgb(82, 195, 232);
+  }
+  
+
+  .project-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+
+  .project1-description {
+    position: relative;
+    font-size: 18px;
+    max-width: 65em;
+    line-height: 1.5rem;
+    margin-left: 10%  ;
+    margin-right: 10%;
+  }
+
+  .project1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    /* margin-right: 10%; */
+  }
+  
+  .project1-image1 {
+    max-width: 20em;
+    height: auto;
+    border-radius: 2em;
+    position: relative;
+
+  }
+  
+  .project1-image2 {
+    max-width: 20em;
+    height: auto;
+    border-radius: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.9s;
+  }
+  
+  .project1-image1:hover .project1-image2 {
+    opacity: 1;
+
+  } .project1-image1 img {
+    display: block;
+  }
+  
+  .project1-image2 {
+    max-width: 20em;
+  }
+ 
+
+  /* poject2  */
+
+  
+  .project2-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+
+  .project2-description {
+    position: relative;
+    font-size: 18px;
+    max-width: 65em;
+    line-height: 1.5rem;
+    margin-left: 10%  ;
+    margin-right: 10%;
+  }
+
+  .project2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-right: 10%; */
+  }
+  
+  .project2-image1 {
+    max-width: 30em;
+    min-width: 1em;
+    height: auto;
+    border-radius: 2em;
+    position: relative;
+
+  }
+  
+  .project2-image2 {
+    max-width: 30em;
+    height: auto;
+    border-radius: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.9s;
+  }
+  
+  .project2-image1:hover .project2-image2 {
+    opacity: 1;
+
+  } .project2-image1 img {
+    display: block;
+  }
+  
+  .project2-image2 {
+    max-width: 30em;
+  }
+ 
+  
+  /* project3 */
+
+   
+  .project3-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+
+  .project3-description {
+    position: relative;
+    font-size: 18px;
+    max-width: 65em;
+    line-height: 1.5rem;
+    margin-left: 10%  ;
+    margin-right: 10%;
+  }
+
+  .project3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-right: 10%; */
+  }
+  
+  .project3-image1 {
+    max-width: 30em;
+    height: auto;
+    border-radius: 2em;
+    position: relative;
+
+  }
+  
+  .project3-image2 {
+    max-width: 30em;
+    height: auto;
+    border-radius: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.9s;
+  }
+  
+  .project3-image1:hover .project3-image2 {
+    opacity: 1;
+
+  } .project3-image1 img {
+    display: block;
+  }
+  
+  .project3-image2 {
+    max-width: 30em;
+  }
+ 
+  
+
+  /* project4 */
+   
+  .project4-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+
+  .project4-description {
+    position: relative;
+    font-size: 18px;
+    max-width: 65em;
+    line-height: 1.5rem;
+    margin-left: 10%  ;
+    margin-right: 10%;
+  }
+
+  .project4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-right: 10%; */
+  }
+  
+  .project4-image1 {
+    max-width: 25em;
+    height: auto;
+    border-radius: 2em;
+    position: relative;
+
+  }
+  
+  .project4-image2 {
+    max-width: 25em;
+    height: auto;
+    border-radius: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.9s;
+  }
+  
+  .project4-image1:hover .project4-image2 {
+    opacity: 1;
+
+  } .project4-image1 img {
+    display: block;
+  }
+  
+  .project4-image2 {
+    max-width: 25em;
+  }
+
+
+  
+footer {
+  margin-top: 0%;
+  background-image: linear-gradient(to right,#081425 , #42431f);
+
+  color: #fff;
+  text-align: center; /* Center the content within the footer */
+  padding: 2rem 0; /* Adjust padding as needed */
+  position: relative;
+  top: 6em;
+}
+
+footer img {
+  max-width: 250px;
+  height: auto;
+  display: block; /* Center the logo horizontally within the footer */
+  margin: 0 auto 1rem; /* Add margin at the bottom for spacing */
+  margin-bottom: -1.5%;
+}
+
+.footer-links, .footer-social {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem; /* Add margin between the links */
+}
+
+.footer-social a {
+  margin: 0 1rem; /* Add margin between the social icons */
+  margin-top: 2%;
+}
+
+.footer-copyright {
+  margin-top: 2rem;
+}
+
+
+ 
+  
+
+  @media (max-width: 620px) {
+
+
+    .both-logos {
+      position: relative;
+      top: -50px;
+      left: 0;
+      display: flex;
+      align-items: center; /* Vertically align the logo and text */
+      margin-left: 6%;
+      
+    }
+    
+    .mylogo {
+      width: 220px;
+      height: auto;
+      z-index: -1;
+    }
+    
+    .logo-text {
+       margin-left: -50px;
+      font-family: "San Francisco", sans-serif;
+      color: rgb(0, 0, 0);
+      font-size: 28px;
+      z-index: -1;
+    }
+    
+    
+    .home,
+      .about,
+      .portfolio,
+      .services,
+      .contact {
+        
+        /* align-items: center; */
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        color: #333;
+        background-color: white;
+        text-align: center;
+        margin-top: 5%;
+        position: sticky;
+        
+    
+      }
+      
+      
+      
+      
+      .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translate(00%, -82%);
+    margin-bottom: -15%;
+        z-index: 999;
+        transition: 0.3s;
+    
+        
+        
+      }
+    
+    
+    
+    
+    
+  }
+
+  @media (max-width: 500px) {
+
+    .project2-image1 {
+      max-width: 20em;
+      min-width: 1em;
+      height: auto;
+      border-radius: 2em;
+      position: relative;
+  transition: all ease 0.3s;
+    }
+    
+    .project2-image2 {
+      max-width: 20em;
+      height: auto;
+      border-radius: 2em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.9s;
+    }
+    
+    .project2-image1:hover .project2-image2 {
+      opacity: 1;
+  
+    } .project2-image1 img {
+      display: block;
+    }
+    
+    .project2-image2 {
+      max-width: 20em;
+    }
+
+
+
+    /* proj3  */
+
+    .project3-image1 {
+      max-width: 20em;
+      min-width: 1em;
+      height: auto;
+      border-radius: 2em;
+      position: relative;
+  transition: all ease 0.3s;
+    }
+    
+    .project3-image2 {
+      max-width: 20em;
+      height: auto;
+      border-radius: 2em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.9s;
+    }
+    
+    .project3-image1:hover .project3-image2 {
+      opacity: 1;
+  
+    } .project3-image1 img {
+      display: block;
+    }
+    
+    .project3-image2 {
+      max-width: 20em;
+    }
+
+    /* proj4  */
+
+
+    .project4-image1 {
+      max-width: 20em;
+      min-width: 1em;
+      height: auto;
+      border-radius: 2em;
+      position: relative;
+  transition: all ease 0.3s;
+    }
+    
+    .project4-image2 {
+      max-width: 20em;
+      height: auto;
+      border-radius: 2em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.9s;
+    }
+    
+    .project4-image1:hover .project4-image2 {
+      opacity: 1;
+  
+    } .project3-image1 img {
+      display: block;
+    }
+    
+    .project4-image2 {
+      max-width: 20em;
+    }
+  }

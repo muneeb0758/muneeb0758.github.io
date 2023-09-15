@@ -33,7 +33,7 @@ body {
   .about,
   .portfolio,
   .services,
-  .contact {
+  .contact , .prjects{
     
     /* align-items: center; */
     font-size: 20px;

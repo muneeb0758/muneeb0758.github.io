@@ -28,7 +28,7 @@ body {
     .about,
     .portfolio,
     .services,
-    .contact {
+    .contact , .projects {
     
       font-size: 20px;
       color: #333;
