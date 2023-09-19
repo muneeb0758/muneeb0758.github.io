@@ -226,7 +226,7 @@ button:hover {
   position: absolute;
   top: 30px;
   left: 0;
-  width: 600px;
+  max-width: 100%;
   padding: 10px;
   display: none;
   background: #fff;
@@ -246,6 +246,7 @@ button:hover {
   text-align: center;
   font-size: 18px;
   top: 470px;
+  margin-top: 10%;
   /* left: 400px; */
   margin-left: 33%;
 
@@ -433,6 +434,8 @@ box-shadow: 0 0 5px var(--color),
     width: 450px;
     left: 70px;
   }
+
+  
 }
 
 @media (max-width: 1024px) {
@@ -578,6 +581,10 @@ footer{
   footer{
     width: 130%;
     left: -1em;
+  }
+
+  .serv{
+    margin-top: 15%;
   }
 }
 
@@ -763,7 +770,7 @@ body{
   top: 500px;
   /* left: 400px; */
   margin-left: 0%;
-  margin-top: 10%;
+  margin-top: 25%;
 
 
 }
@@ -892,7 +899,7 @@ footer{
     text-align: center;
     top: 500px;
     left: 0em;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 
   
   
@@ -954,7 +961,7 @@ footer{
     text-align: center;
     top: 500px;
     left: 0em;
-    margin-top: 10%;
+    margin-top: 35%;
 
     transition: all ease 0.3s;
   
