@@ -1,303 +1,118 @@
 body {
-  background-color: rgba(255, 255, 255, 0.886);
+  background-image: url("bkg.jpeg");
+  background-size: cover;
+  background-position: center center;
 }
 
+body {
+  font-family: sans-serif;
+}
 
-.both-logos {
-  position: relative;
-  top: -50px;
-  left: 0;
-  display: flex;
-  align-items: center; /* Vertically align the logo and text */
-  margin-left: 0%;
-  
+header {
+  text-align: center;
 }
 
 .mylogo {
-  width: 270px;
-  height: auto;
-  z-index: 999;
+  width: 100px;
+  height: 100px;
 }
 
 .logo-text {
-   margin-left: -50px;
-  font-family: "San Francisco", sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 28px;
-  z-index: 999;
+  font-size: 24px;
+  font-weight: bold;
 }
 
+nav {
+  float: right;
+}
 
-.home,
-  .about,
-  .portfolio,
-  .services,
-  .contact , .projects {
-    
-    /* align-items: center; */
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    color: #333;
-    background-color: white;
-    text-align: center;
-    margin-top: 5%;
-    position: sticky;
-    
-
-  }
-  
-  
-  
-  
-  .nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translate(00%, -212%);
-margin-bottom: -15%;
-    z-index: 999;
-
-    
-    
-  }
-
-
-
-
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-size: 17px;
+}
 
 
 a:hover {
-  color: rgb(44, 44, 219);
+  color: rgb(213, 57, 1);
+  transition: 0.3s;    
+  transform: translateY(-0.1em);
 }
 
-.headers {
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1 {
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 20px;
-  background: linear-gradient(to bottom, skyblue, #f0f9ff);
+  font-size: 36px;
+  font-weight: bold;
 }
 
-img {
-  width: 160px;
-  height: 150px;
-  border-radius: 50%;
-  float: left;
-  margin-left: 100px;
-  margin-top: 0px;
+.download-button {
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+section {
+  margin-bottom: 20px;
 }
 
 .personalinfo {
-  margin-left: 0px;
   font-weight: bold;
-  margin-top: 100px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-
 }
-
-.personal {
-  margin-left: 25%;
-}
-
-.email {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: medium;
-}
-
 
 .profile {
-  margin-left: 8%;
-  margin-top: 100px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.container {
-  width: 1000px;
-  margin-left: 14%;
+  margin-top: 20px;
 }
 
 .education,
-.skills {
-  margin-left: 8%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  margin-top: 50px;
+.experience {
+  margin-top: 20px;
 }
 
 .ed1,
 .ed2,
 .ex1,
 .ex2,
-.d2 {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.ex3 {
+  margin-bottom: 10px;
 }
 
 .date1,
 .date2,
 .date3,
-.date4,
-.skill {
-  text-align: left;
-  width: 30%;
-  margin-left: 14%;
-  margin-top: 15px;
+.date4 {
+  font-size: 12px;
 }
-
-.school1,
-.school2 {
-  text-align: center;
-  width: 35%;
-  margin-left: 10px;
-}
-
-.experience,
-.cont {
-  margin-left: 8%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.work1,
-.work2 {
-  text-align: left;
-  width: 30%;
-  margin-top: 10px;
-
-}
-
-.descriptionw1 {
-  text-align: left;
-  width: 30%;
-  margin-left: 12%;
-
-}
-
-
-.d2 {
-  text-align: left;
-  width: auto;
-  margin-left: 42%;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.d3 {
-  text-align: left;
-  width: auto;
-  margin-left: 42%;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-
-
-
-
-.checkbox {
-  height: 40px;
-  width: 80px;
-  background: #222;
-  appearance: none;
-  border-radius: 80px;
-  box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.1);
-  position: relative;
-  outline: none;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.checkbox::before {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background: linear-gradient(to bottom, #444, #222);
-  border-radius: 40px;
-  transform: scale(0.9);
-  transition: 0.5s;
-  box-shadow: 0 4px 20px rgba(249, 247, 247, 0.5), inset 2px 2px rgba(255, 255, 255, 0.2), inset -2px 2px rgba(255, 255, 255, 0.2);
-}
-
-.checkbox:checked {
-  background: #fff;
-  box-shadow: inset 0 1px 30px rgba(0, 0, 0, 0.1), inset 0 1px 4px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.05);
-  background: #111111;
-}
-
-.checkbox:checked::before {
-  left: 40px;
-  box-shadow: 0 4px 10px rgba(193, 188, 188, 0.1), inset 2px 2px rgba(255, 255, 255, 1), inset -2px 2px rgba(255, 255, 255, 1);
-  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-}
-
-
-
-.checkbox:checked::before {
-  background: #f8f8f8;
-}
-
-.dark-mode {
-  background: #111;
-  /* Dark background color */
-  color: white;
-  /* White text color */
-}
-
-.dark-mode .header h1 {
-  color: white;
-  /* Header text color in dark mode */
-}
-
-.dark-mode .nav a  ,  .dark-mode div .logo-text {
-  color: white;
-  /* Header text color in dark mode */
-  background-color: #111;
-  transition: 0.5s;
-}
-
-/* footer  */
 
 footer {
   margin-top: 0%;
-  background-image: linear-gradient(to right,#081425 , #42431f);
-height: auto;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+
   color: #fff;
   text-align: center; /* Center the content within the footer */
   padding: 2rem 0; /* Adjust padding as needed */
-  margin-top: 10%;
-  
+  position: relative;
+  top: 6em;
 }
+
 footer img {
   max-width: 250px;
   height: auto;
-  display: block;
-  margin: 0 auto 1rem;
+  display: block; /* Center the logo horizontally within the footer */
+  margin: 0 auto 1rem; /* Add margin at the bottom for spacing */
   margin-bottom: -1.5%;
-  position: relative; 
-  top: 0px;
-  left: 50%;
-  transform: translateY(-50%);
-
 }
 
 .footer-links, .footer-social {
@@ -309,7 +124,6 @@ footer img {
   color: #ffffff;
   text-decoration: none;
   margin: 0 1rem; /* Add margin between the links */
-  margin-top: 3%;
 }
 
 .footer-social a {
@@ -322,137 +136,9 @@ footer img {
 }
 
 
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .both-logos {
-    margin-bottom: -120px; /* Add margin between logos and navigation for small screens */
-    align-items: center;
-    transition: 0.3s;
-  }
-
-  .mylogo {
-    width: 220px;
-    height: auto;
-    z-index: 999;
-    margin-top: -3%;
-  }
-
-  .nav {
-    flex-direction: row; /* Display links in a row for small screens */
-    justify-content: center; /* Align links to the left for small screens */
-    width: 100%; /* Ensure the links span the full width of the header */
-    padding: 10px 0; /* Add padding to the links for spacing */
-    transform: translate(10%, -20%);
-  }
-  footer {
-    margin-top: 0%;
-    background-image: linear-gradient(to right,#081425 , #42431f);
-  height: 170px;
-    color: #fff;
-    text-align: center; /* Center the content within the footer */
-    padding: 4.5rem 0; /* Adjust padding as needed */
-    margin-top: 10%;
-    
-  }
-  footer img {
-    max-width: 250px;
-    height: auto;
-    display: block;
-    margin: 0 auto 1rem;
-    margin-bottom: -1.5%;
-    position: relative; 
-    top: 0px;
-    left: 50%;
-    transform: translateY(-65%);
-  
-  }
-
-  
-.footer-links, .footer-social {
-  display: flex;
-  justify-content: center; 
-  margin-top: 2%;
-}
-.footer-links{
-  margin-top: 2%;
-  z-index: 999;
-}
-
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 1rem;
-  margin-top: 5%;
-}
-
-.footer-social a {
-  margin: 0 1.5rem;
-  margin-top: 5%;
-}
-
-.footer-copyright {
-  margin-top: 3rem;
-}
-
-.checkbox {
-  height: 40px;
-  width: 80px;
-  background: #222;
-  appearance: none;
-  border-radius: 80px;
-  box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: 0px;
-  right: 20px;
-  outline: none;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  float: left;
-  margin-left: 50px;
-  margin-top: 40px;
-}
-
-.personal  {
-  text-align: left;
-  font-size: 16px;
-  color: #333;
-  position: relative;
-  top: 0px;
-  left: 20px;
-  width: 100%;
-}
- .email{
-  text-align: left;
-  font-size: 16px;
-  color: #333;
-  position: relative;
-  top: 0px;
-  left: 0px;
- }
-
-/* Style for the personal information heading */
-.personalinfo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.container {
-  width: 400px;
-  margin-left: 12%;
-}
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 

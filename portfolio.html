@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muneeb Ahmed - Portfolio</title>
+  <title> Portfolio</title>
   <link rel="stylesheet" href="cv.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -11,13 +11,13 @@
 <header>
   <div class="both-logos">
     <img class="mylogo" src="logo.png" alt="logo">
-    <h2 class="logo-text">Myself</h2>
+    <h2 class="logo-text">MebHub</h2>
   </div>
   <nav class="nav">
     <a href="index.html" class="home">Home</a>
     <a href="about.html" class="about">About</a>
     <a href="portfolio.html" class="portfolio">Portfolio</a>    
-    <a href="index.html" class="services">Services</a>
+    <a href="index.html" class="services" onclick="document.querySelector('.serv').scrollIntoView(); return false;">Services</a>
     <a href="contact.html" class="contact">Contact</a>
     <a href="projects.html" class="projects">Projects</a>
 
@@ -33,9 +33,10 @@
   <main class="light-mode">
     <div class="headers">
       <h1>MUNEEB AHMED</h1>
+      <a href="Resume.docx" download="CV" class="download-button">Download CV</a>
+
     </div>
     <section>
-      <img src="Muneeb-DP.png" alt="Muneeb">
       <div class="personal">
         <h3 class="personalinfo">Personal Information</h3>
         <hr>
@@ -129,6 +130,12 @@
 
 
     
+    
+    
+    
+    
+  </main>
+
   <footer>
     <img class ="footer-logo" src="logo.png" alt="Logo">
     <div class="footer-links">
@@ -144,14 +151,9 @@
       <a href="https://www.linkedin.com/in/muneeb-ahmed-a82590252/"><i class="fab fa-linkedin"></i></a>
  </div>
     <div class="footer-copyright">
-      Copyright &copy; 2023 Myself by Muneeb
+      Copyright &copy; 2023 MebHub by Muneeb
     </div>
   </footer>
-  
-
-    
-
-  </main>
   <script>
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const pageBody = document.getElementById("page-body"); // Select the body element
