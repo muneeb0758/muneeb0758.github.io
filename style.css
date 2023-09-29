@@ -126,7 +126,6 @@ h1.name:hover , h1.name2:hover {
   max-width: 600px;
   height: auto;
   transform: translate(120%, -60%);
- filter: blur(8px);
 }
 
 
@@ -167,7 +166,6 @@ left: 150px;
   max-width: 100%; 
   height: auto; 
   border-radius: 20px;
-  filter: blur(8px);
 }
 
 .image-info:hover{
@@ -235,7 +233,7 @@ button:hover {
   position: absolute;
   top: 30px;
   left: 0;
-  max-width: 100%;
+  max-width: 100vw;
   padding: 10px;
   display: none;
   background: transparent;
@@ -965,7 +963,12 @@ footer{
       
     }
 
-
+    
+.abt-text,
+.skl-text,
+.exp-text{
+  max-width: 100vw;
+}
     .shortbio {
       max-width: 100vw;
   
