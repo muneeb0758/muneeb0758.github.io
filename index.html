@@ -23,10 +23,9 @@
       <nav class="nav">
         
         <a href="index.html" class="home">Home</a>
-        <a href="about.html" class="about">About</a>
         <a href="portfolio.html" class="portfolio">Portfolio</a>    
         <a href="index.html" class="services" onclick="document.querySelector('.serv').scrollIntoView(); return false;">Services</a>
-        <!-- <a href="contact.html" class="contact">Contact</a> -->
+        <a href="contact.html" class="contact">Contact</a>
         <a href="projects.html" class="projects">Projects</a>
       </nav>
   </header>
@@ -39,11 +38,11 @@
   </p>
  </div>
 
- <img class="pic" src="aao.png" alt="Muneeb's Picture">
+ <img class="pic" src="progess.png" alt="Muneeb's Picture">
  <button class="btn" onclick="window.location.href='mailto:dev.muneeb@gmail.com'">Email Me</button>
 
  <div class="image-info">
-  <img src="yeah.png" alt="Muneeb's Picture">
+  <img src="DurdleDoor.png" alt="Muneeb's Picture">
 </div>
 
 
@@ -140,21 +139,84 @@
 
 
 <title>Contact Form</title>
+  <form id="contact-form">
+    <h2>Contact Us</h2>
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Your Name">
+    </div>
+    <div class="form-group">
+      <label for="youremail">Your Email</label>
+      <input type="email" id="youremail" class="form-control" placeholder="Your Email">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" class="form-control" placeholder="Subject">
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" class="form-control" rows="7" placeholder="Message"></textarea>
+    </div>
+    <button class="Send" onclick="sendEmail(event)">Send Message</button>
+  </form>
 
-<form id="contact-form">
-  <h2>Review Us</h2>
- 
-  <button type="button" class="Send" onclick="window.location.href='instagram.html'"  style="width: 10vw;">Login</button>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("4Tzj1TDc1OieCs5ru");
+    })();
+
+    // Get form elements
+    const form = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('youremail');
+    const subjectInput = document.getElementById('subject');
+    const messageInput = document.getElementById('message');
+
+    function sendEmail(event) {
+      event.preventDefault();
+
+      // Get values from form
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const subject = subjectInput.value;
+      const message = messageInput.value;
 
 
 
+    
 
-  </div>
+  if (!name || !email || !subject || !message) {
+  alert('Please fill in all fields.');
+  return;
+}
+    
+      emailjs.send('service_090078601', 'template_v8y8x95', {
+        to_email: "dev.muneeb@hotmail.com",
 
-</form>
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message
+      })
+
+
   
+      .then(response => {
+        console.log('Email sent successfully', response);
 
+        // Clear form fields
+        nameInput.value = ''; 
+        emailInput.value = '';
+        subjectInput.value = '';
+        messageInput.value = '';
 
+        // Alert user
+        alert('Email sent successfully!');
+      })
+      .catch(error => console.error('Failed to send email', error));
+    }
+  </script>
  
 
   <!-- footer -->
