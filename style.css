@@ -126,6 +126,7 @@ h1.name:hover , h1.name2:hover {
   max-width: 600px;
   height: auto;
   transform: translate(120%, -60%);
+  border-radius: 50%;
 }
 
 
